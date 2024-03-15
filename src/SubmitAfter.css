@@ -1,0 +1,34 @@
+.SubmitAfter{
+    display: flex;
+    flex-direction: column;
+    max-height: 416px;
+    justify-content: center;
+    align-items: center;
+}
+.SubmitAfter img{
+    max-width: 162px;
+}
+.selectResult{
+    display: flex;
+    align-items: center;
+    width: 193px;
+    justify-content: center;
+    color: #FC7614;
+    font-size: 15px;
+    background-color: #262E38;
+    border-radius:50px;
+    max-height: 32px;
+    margin-top: 25px
+}
+.SubmitAfter h2{
+    font-size: 28px;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+.SubmitAfter p{
+    font-size: 15px;
+    color: #969FAD;
+    font-weight: 400;
+    text-align: center;
+    max-width: 340px;
+}

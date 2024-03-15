@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Main from "./Main";
+import NumberCheckBox from "./NumberCheckBox";
+import SubmitButton from "./SubmitButton";
+import SubmitAfter from "./SubmitAfter";
+import { useState } from 'react';
 function App() {
+  const [isSubmitted, setIsSubmitted]=useState(false);
+  const [items,setItems]=useState('');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    {!isSubmitted && (
+      <div className='container'>
+      <Main/>
+      <div  className='number-checkbox'>
+        <NumberCheckBox number="1"  setItems={setItems}/>
+        <NumberCheckBox number="2" setItems={setItems} />
+        <NumberCheckBox number="3" setItems={setItems} />
+        <NumberCheckBox number="4"  setItems={setItems}/>
+        <NumberCheckBox number="5"  setItems={setItems}/>
+      </div>
+      <SubmitButton setIsSubmitted={setIsSubmitted}/>
+      </div>
+    )}
+    
+      {isSubmitted &&  <SubmitAfter items={items} /> }
+      
     </div>
   );
 }

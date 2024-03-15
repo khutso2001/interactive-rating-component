@@ -1,0 +1,31 @@
+.NumberCheckBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: #382726;
+    border-radius: 50px;
+    width: 51px;
+    height: 51px;
+    background-color: #262E38;
+}
+.NumberCheckBox button{
+    background-color: #262E38;
+    color: #7C8798;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    width: 51px;
+    height: 51px;
+    border: none;
+    
+}
+    
+.NumberCheckBox button:hover{
+    background-color: #FC7614;
+
+}

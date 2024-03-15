@@ -1,0 +1,17 @@
+.main h1{
+    color: #FFFFFF;
+    font-size: 28px;
+}
+.main p{
+    color: #969FAD;
+    font-size: 15px;
+}
+.star-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: #262E38;
+    border-radius: 50px;
+}

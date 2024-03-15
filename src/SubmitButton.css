@@ -1,0 +1,12 @@
+.SubmitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SubmitButton button{
+    border: navajowhite;
+    height: 45px;
+    background-color: #FC7614;
+    border-radius: 50px;
+    width: 100%;
+}
